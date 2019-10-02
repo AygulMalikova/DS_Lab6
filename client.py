@@ -7,9 +7,7 @@ SIZE = 256
 
 
 def file_sending(file, socket):
-    i = 0
     size_of_file = os.path.getsize(file)
-
     number_of_iterations = math.floor(size_of_file/SIZE)
 
     with open(file, 'rb') as f:
